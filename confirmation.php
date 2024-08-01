@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             VALUES ('$name', '$email', '$phone', '$confirmation_id')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: https://rzp.io/l/MaoSYm5Jon");
+        header("Location: http://localhost/projectflight/lastpage.php");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
